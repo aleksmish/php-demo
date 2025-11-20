@@ -74,7 +74,7 @@ function handle_edit() {
     echo '<div class="div-edit"><h3>Редактировать запись</h3><ul>';
     foreach ($rows as $it) {
         $isCurrent = ($it['id'] == $selectedId);
-        $style = $isCurrent ? 'class="currentRow"' : '';
+        $style = $isCurrent ? 'class="fw-bold"' : '';
         echo '<li ' . $style . '><a href="index.php?action=edit&id=' . $it['id'] . '">' . $it['surname'] . ' ' . $it['name'].'</a></li>';
     }
     echo '</ul></div>';
